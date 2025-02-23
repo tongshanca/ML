@@ -28,6 +28,8 @@ def plot_cat_decision_boundary(X,predict , class_labels=None, legend=False, vect
     xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
                          np.arange(y_min, y_max, h))
     points = np.c_[xx.ravel(), yy.ravel()]
+    print("points", points.shape)
+    print("xx.shape", xx.shape)
 
     #make predictions for each point in mesh
     if vector:
